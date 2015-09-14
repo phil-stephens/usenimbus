@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Nimbus
+        psr4_prefix: Nimbus
+        src_path: app

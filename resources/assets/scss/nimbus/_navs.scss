@@ -1,0 +1,121 @@
+.top-pane
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+
+  h3
+  {
+    margin: 0;
+  }
+}
+
+.bottom-pane
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+}
+
+.sidebar
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  text-align: center;
+
+
+  header
+  {
+    margin-bottom: 10px;
+
+    h2
+    {
+      margin: 0 auto;
+      width: 120px;
+
+      a
+      {
+        display: block;
+        width: 120px;
+        height: 116px;
+        background: url('../img/nimbus-icon.svg') no-repeat 50%;
+        background-size: 120px 116px;
+        @include hide-text;
+      }
+    }
+  }
+
+  footer
+  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .alchemy-credit
+    {
+      margin-top: 0;
+    }
+  }
+
+
+
+  .sidebar-toggle
+  {
+    margin: -10px -15px 5px;
+    padding: 0;
+    display: none;
+    @include clearfix;
+
+    @media (max-width: $screen-xs-max) {
+      display: block
+    }
+
+    a
+    {
+      margin: 0;
+      padding: 0;
+      float: right;
+    }
+  }
+
+  .collapse
+  {
+
+    &.open
+    {
+      display: block;
+      visibility: visible;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+
+}
+
+.nav-sidebar
+{
+  margin-right: -20px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}

@@ -1,0 +1,124 @@
+
+body
+{
+  font-family: "museo";
+  font-weight: 100;
+  margin-top: 50px;
+}
+
+h1.logo
+{
+  width: 300px;
+  height: 289px;
+  background: url('../img/nimbus-icon.svg') no-repeat 50%;
+  background-size: 300px 289px;
+  margin: 20px auto;
+  @include hide-text;
+}
+
+h1, h2, h3, h4, h5
+{
+  font-weight: 100;
+}
+
+.well
+{
+  margin-top: 2em;
+
+  h3
+  {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  p:last-child
+  {
+    margin-bottom: 0;
+  }
+}
+
+.alchemy-credit
+{
+  color: $text-color;
+  display: inline-block;
+  margin: 2em 0 1em;
+
+  span
+  {
+    display: block;
+    width: 180px;
+    height: 51px;
+    background: transparent url('../img/alchemy-logo.svg') no-repeat 50%;
+    background-size: 180px 51px;
+    @include hide-text;
+  }
+
+  &:hover
+  {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.hero
+{
+  border-bottom: solid 1px #eee;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+header
+{
+  .navbar-default
+  {
+    background: #fff;
+    border: none;
+  }
+
+  .navbar-brand
+  {
+    height: 52px;
+    width: 42px;
+    background: url('../img/nimbus-icon.svg') no-repeat 50%;
+    background-size: 42px 40px;
+    @include hide-text;
+  }
+}
+
+h3
+{
+  margin-top: 0;
+}
+
+.cta
+{
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  img
+  {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    @include translate(120%, -50%);
+  }
+
+  &.alt
+  {
+    img
+    {
+      left: 0px;
+      @include translate(-120%, -50%);
+    }
+  }
+
+  .label
+  {
+    font-weight: 100;
+    font-size: 16px;
+    background: #ddd;
+    vertical-align: middle;
+  }
+}
+

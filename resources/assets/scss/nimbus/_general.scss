@@ -1,0 +1,191 @@
+body
+{
+  font-family: "museo";
+  font-weight: 100;
+
+  &.with-top-pane
+  {
+    padding-top: 70px;
+  }
+
+  &.with-bottom-pane
+  {
+    padding-bottom: 70px;
+  }
+}
+
+.file_name
+{
+  @include text-overflow;
+}
+
+h1.logo
+{
+  margin: 20px auto 40px;
+  width: 150px;
+
+  a
+  {
+    display: block;
+    width: 150px;
+    height: 145px;
+    background: url('../img/nimbus-icon.svg') no-repeat 50%;
+    background-size: 150px 145px;
+    @include hide-text;
+  }
+}
+
+h1, h2, h3, h4, h5
+{
+  font-weight: 100;
+}
+
+.page-header
+{
+  margin-top: 10px;
+  @include clearfix;
+
+  h1
+  {
+    margin-top: 0;
+  }
+}
+
+.btn-naked
+{
+  background: transparent;
+  border: none;
+}
+
+.upload-overlay
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 90px 20px;
+  background: rgba(0,0,0,0.75);
+  display: none;
+  z-index: 9999;
+  overflow-y: scroll;
+
+  h3
+  {
+    color: $text-color;
+  }
+
+  .dz-remove
+  {
+    color: #fff;
+  }
+}
+
+form.delete-file-form
+{
+  margin: 0;
+  padding: 0;
+}
+
+.table
+{
+  &.table-middle > tbody > tr > td
+  {
+    vertical-align: middle;
+  }
+}
+
+.alchemy-credit
+{
+  color: $text-color;
+  display: inline-block;
+  margin: 2em 0 1em;
+
+  span
+  {
+    display: block;
+    width: 100px;
+    height: 28px;
+    background: transparent url('../img/alchemy-logo.svg') no-repeat 50%;
+    background-size: 100px 28px;
+    @include hide-text;
+  }
+
+  &:hover
+  {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.sidebar
+{
+  .alchemy-credit
+  {
+    opacity: 0.3;
+
+    &:hover
+    {
+      opacity: 1;
+    }
+  }
+}
+
+.social-btn
+{
+  margin-bottom: 2em;
+}
+
+.checkbox label,
+label
+{
+  font-weight: 100;
+}
+
+table td
+{
+  font-weight: 100;
+}
+
+.nimbus-credit
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: $text-color;
+  display: inline-block;
+
+  span
+  {
+    display: block;
+    margin-top: 5px;
+    width: 80px;
+    height: 77px;
+    background: transparent url('../img/nimbus-icon.svg') no-repeat 50%;
+    background-size: 80px 77px;
+    @include hide-text;
+  }
+
+  &:hover
+  {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.credentials
+{
+  background: #eee;
+  padding: 20px;
+
+  h3
+  {
+    margin-top: 0;
+  }
+}
+
+dt
+{
+  font-weight: 100;
+}
