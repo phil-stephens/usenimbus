@@ -1,3 +1,5 @@
+![Nimbus](https://philstephens.io/image/Media/nimbus-icon.png)
+
 # Nimbus
 ### Really Simple File-sharing
 
