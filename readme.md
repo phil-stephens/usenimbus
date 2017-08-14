@@ -88,9 +88,9 @@ DROPBOX_CLIENT_SECRET=XXXXXXXX
 
 You will also need an SSL certificate for the Oauth flow used by Dropbox.  No dramas - you can pick one up pretty cheap (or even free) these days.
 
-### Copy.com
+~### Copy.com~
 
-Create a new application through the Copy.com developer portal and add the credentials here:
+~Create a new application through the Copy.com developer portal and add the credentials here:~
 
 ```
 COPY_IDENTIFIER=XXXXXXXX
